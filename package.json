@@ -1,0 +1,36 @@
+{
+  "name": "vscode-context-profiler",
+  "publisher": "adhyakoul",
+  "displayName": "Context Profiler",
+  "description": "Offline AI Sandbox Policy Generator using Ollama",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "context-profiler.generatePolicy",
+        "title": "Context Profiler: Generate Sandbox Policy"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.90.0",
+    "@types/node": "18.x",
+    "typescript": "^5.4.5"
+  }
+}

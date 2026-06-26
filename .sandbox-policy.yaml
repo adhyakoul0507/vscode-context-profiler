@@ -1,0 +1,18 @@
+terminal:
+  allow:
+    - npm
+    - npx
+    - code
+    - tsc
+    - ls
+    - pwd
+    - rm
+    - git
+network:
+  allowed_domains:
+    - registry.npmjs.org
+    - localhost
+    - 127.0.0.1
+fs:
+  allowed_paths:
+    - ./
