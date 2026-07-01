@@ -1,0 +1,8 @@
+{
+  "name": "capability-sandbox-plugin",
+  "version": "1.0.0",
+  "description": "A plugin that intercepts and routes agent terminal commands through an Intent-Aware Capability Sandbox Engine",
+  "author": {
+    "name": "AI Guardian"
+  }
+}

@@ -1,0 +1,28 @@
+filesystem:
+  read:
+    - /project/**
+  write:
+    - /project/src/**
+  deny:
+    - ~/.aws/**
+
+terminal:
+  allow:
+    - ls
+    - pwd
+    - cat
+    - grep
+    - tar
+  ask:
+    - pip
+    - git commit
+  deny:
+    - rm
+    - sudo
+
+network:
+  allow:
+    - github.com
+    - pypi.org
+  deny:
+    - "*"

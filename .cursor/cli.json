@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "npm",
+      "npx",
+      "git"
+    ],
+    "deny": [
+      "rm -rf",
+      "sudo",
+      "chmod 777",
+      "curl | sh",
+      "wget | sh"
+    ]
+  },
+  "_meta": {
+    "generatedBy": "Context Profiler",
+    "generatedAt": "2026-06-29T07:13:24.997Z",
+    "reasoning": "No reasoning provided."
+  }
+}
