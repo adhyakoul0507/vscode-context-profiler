@@ -13,6 +13,10 @@ terminal:
     - cat
     - grep
     - tar
+    - mkdir
+    - code
+    - open
+    - curl
   ask:
     - pip
     - git commit
@@ -24,5 +28,6 @@ network:
   allow:
     - github.com
     - pypi.org
+    - google.com
   deny:
     - "*"
