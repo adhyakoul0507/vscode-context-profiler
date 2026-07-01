@@ -20,4 +20,5 @@ For the generated policies to actually block the AI, you must install the Securi
 1. Locate your Antigravity global configuration folder (usually `~/.gemini/config/plugins/`).
 2. Copy the `enforcers/antigravity-plugin/` folder from this repository into your plugins directory.
 3. Name the folder `capability-sandbox-plugin`.
-4. The Antigravity IDE will automatically detect the plugin. From now on, all terminal commands the agent tries to run will be routed through `sandbox_exec.py`, which will strictly enforce the `.sandbox-policy.yaml` in your workspace!
+4. The Antigravity IDE will automatically detect the plugin. 
+5. To activate the Bouncer in any new chat, simply type `@capability-enforcer` in your prompt. From that moment on, all terminal commands the agent tries to run will be routed through `sandbox_exec.py`, which will strictly enforce the `.sandbox-policy.yaml` in your workspace!
